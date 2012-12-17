@@ -1,0 +1,43 @@
+inherited UserGroupSearchForm: TUserGroupSearchForm
+  Left = 309
+  Height = 312
+  Top = 199
+  Width = 233
+  Caption = 'UserGroupSearchForm'
+  ClientHeight = 312
+  ClientWidth = 233
+  inherited DataPanel: TPanel
+    Width = 233
+    ClientWidth = 233
+    inherited DataLinePanel: TPanel
+      Width = 233
+    end
+    inherited QuerySpeedButton: TSpeedButton
+      Left = 168
+    end
+  end
+  inherited GridPanel: TPanel
+    Height = 232
+    Width = 233
+    ClientHeight = 232
+    ClientWidth = 233
+    inherited SearchListBox: TListBox
+      Height = 216
+      Width = 217
+    end
+  end
+  inherited BottomPanel: TPanel
+    Top = 273
+    Width = 233
+    ClientWidth = 233
+    inherited BottomLinePanel: TPanel
+      Width = 233
+    end
+    inherited SelectButton: TButton
+      Left = 70
+    end
+    inherited FecharButton: TButton
+      Left = 150
+    end
+  end
+end

@@ -1,0 +1,110 @@
+object CustomSearchForm: TCustomSearchForm
+  Left = 290
+  Height = 310
+  Top = 204
+  Width = 246
+  BorderIcons = [biSystemMenu]
+  Caption = 'CustomSearchForm'
+  ClientHeight = 310
+  ClientWidth = 246
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  LCLVersion = '0.9.29'
+  object DataPanel: TPanel
+    Left = 0
+    Height = 41
+    Top = 0
+    Width = 246
+    Align = alTop
+    BevelOuter = bvNone
+    ClientHeight = 41
+    ClientWidth = 246
+    TabOrder = 0
+    object DataLinePanel: TPanel
+      Left = 0
+      Height = 2
+      Top = 39
+      Width = 246
+      Align = alBottom
+      BevelOuter = bvLowered
+      TabOrder = 0
+    end
+    object SearchStringEdit: TEdit
+      Left = 8
+      Height = 21
+      Top = 8
+      Width = 145
+      TabOrder = 1
+    end
+    object QuerySpeedButton: TSpeedButton
+      Left = 181
+      Height = 25
+      Top = 8
+      Width = 57
+      Anchors = [akTop, akRight]
+      Caption = 'Consultar'
+      Color = clBtnFace
+      NumGlyphs = 0
+    end
+  end
+  object GridPanel: TPanel
+    Left = 0
+    Height = 230
+    Top = 41
+    Width = 246
+    Align = alClient
+    BevelOuter = bvNone
+    BorderWidth = 8
+    ClientHeight = 230
+    ClientWidth = 246
+    TabOrder = 1
+    object SearchListBox: TListBox
+      Left = 8
+      Height = 214
+      Top = 8
+      Width = 230
+      Align = alClient
+      ItemHeight = 0
+      TabOrder = 0
+    end
+  end
+  object BottomPanel: TPanel
+    Left = 0
+    Height = 39
+    Top = 271
+    Width = 246
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 39
+    ClientWidth = 246
+    TabOrder = 2
+    object BottomLinePanel: TPanel
+      Left = 0
+      Height = 2
+      Top = 0
+      Width = 246
+      Align = alTop
+      BevelOuter = bvLowered
+      TabOrder = 0
+    end
+    object SelectButton: TButton
+      Left = 83
+      Height = 25
+      Top = 8
+      Width = 75
+      Anchors = [akTop, akRight]
+      Caption = 'Selecionar'
+      TabOrder = 1
+    end
+    object FecharButton: TButton
+      Left = 163
+      Height = 25
+      Top = 8
+      Width = 75
+      Anchors = [akTop, akRight]
+      Cancel = True
+      Caption = 'Fechar'
+      TabOrder = 2
+    end
+  end
+end

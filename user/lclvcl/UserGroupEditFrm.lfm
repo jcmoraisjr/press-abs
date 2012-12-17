@@ -1,0 +1,64 @@
+inherited UserGroupEditForm: TUserGroupEditForm
+  Height = 338
+  Width = 290
+  Caption = 'UserGroupEditForm'
+  ClientHeight = 338
+  ClientWidth = 290
+  inherited BottomPanel: TPanel
+    Top = 299
+    Width = 290
+    ClientWidth = 290
+    inherited LinePanel: TPanel
+      Width = 290
+    end
+    inherited GravarButton: TButton
+      Left = 128
+    end
+    inherited FecharButton: TButton
+      Left = 208
+    end
+  end
+  inherited ClientPanel: TPanel
+    Height = 299
+    Width = 290
+    ClientHeight = 299
+    ClientWidth = 290
+    object NomeLabel: TLabel[0]
+      Left = 8
+      Height = 14
+      Top = 8
+      Width = 77
+      Caption = 'Nome do grupo:'
+      FocusControl = NomeEdit
+      ParentColor = False
+    end
+    object NomeEdit: TEdit[1]
+      Left = 8
+      Height = 21
+      Top = 24
+      Width = 273
+      TabOrder = 0
+    end
+    object AcessosGroupBox: TGroupBox[2]
+      Left = 8
+      Height = 233
+      Top = 56
+      Width = 273
+      Caption = 'Acessos:'
+      ClientHeight = 215
+      ClientWidth = 269
+      TabOrder = 1
+      object AcessosStringGrid: TStringGrid
+        Left = 8
+        Height = 193
+        Top = 8
+        Width = 249
+        DefaultColWidth = 32
+        DefaultRowHeight = 16
+        TabOrder = 0
+        TitleFont.Height = -11
+        TitleFont.Name = 'MS Sans Serif'
+      end
+    end
+  end
+end

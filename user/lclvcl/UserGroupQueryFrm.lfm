@@ -1,0 +1,33 @@
+inherited UserGroupQueryForm: TUserGroupQueryForm
+  Left = 264
+  Height = 312
+  Top = 110
+  Width = 297
+  Caption = 'UserGroupQueryForm'
+  ClientHeight = 312
+  ClientWidth = 297
+  inherited GridPanel: TPanel
+    Height = 273
+    Width = 297
+    ClientHeight = 273
+    ClientWidth = 297
+    inherited QueryStringGrid: TStringGrid
+      Height = 257
+      Width = 281
+    end
+  end
+  inherited BottomPanel: TPanel
+    Top = 273
+    Width = 297
+    ClientWidth = 297
+    inherited BottomLinePanel: TPanel
+      Width = 297
+    end
+    inherited AtualizarButton: TButton
+      Left = 134
+    end
+    inherited FecharButton: TButton
+      Left = 214
+    end
+  end
+end

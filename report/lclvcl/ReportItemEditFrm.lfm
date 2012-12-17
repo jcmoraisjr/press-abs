@@ -1,0 +1,89 @@
+inherited ReportItemEditForm: TReportItemEditForm
+  Left = 197
+  Height = 299
+  Top = 130
+  Width = 255
+  Caption = 'ReportItemEditForm'
+  ClientHeight = 299
+  ClientWidth = 255
+  inherited BottomPanel: TPanel
+    Top = 260
+    Width = 255
+    ClientWidth = 255
+    inherited LinePanel: TPanel
+      Width = 255
+    end
+    inherited GravarButton: TButton
+      Left = 93
+    end
+    inherited FecharButton: TButton
+      Left = 173
+    end
+  end
+  inherited ClientPanel: TPanel
+    Height = 260
+    Width = 255
+    ClientHeight = 260
+    ClientWidth = 255
+    object TituloLabel: TLabel[0]
+      Left = 16
+      Height = 14
+      Top = 8
+      Width = 32
+      Caption = 'Título:'
+      FocusControl = TituloEdit
+      ParentColor = False
+    end
+    object GruposUsuarioLabel: TLabel[1]
+      Left = 16
+      Height = 14
+      Top = 48
+      Width = 150
+      Caption = 'Grupos de usuário com acesso:'
+      FocusControl = GruposUsuarioStringGrid
+      ParentColor = False
+    end
+    object FormulaLabel: TLabel[2]
+      Left = 16
+      Height = 14
+      Top = 208
+      Width = 41
+      Caption = 'Fórmula:'
+      FocusControl = FormulaEdit
+      ParentColor = False
+    end
+    object TituloEdit: TEdit[3]
+      Left = 16
+      Height = 21
+      Top = 24
+      Width = 225
+      TabOrder = 0
+    end
+    object VisivelCheckBox: TCheckBox[4]
+      Left = 16
+      Height = 19
+      Top = 180
+      Width = 52
+      Caption = 'Visível'
+      TabOrder = 2
+    end
+    object GruposUsuarioStringGrid: TStringGrid[5]
+      Left = 16
+      Height = 105
+      Top = 64
+      Width = 225
+      DefaultColWidth = 32
+      DefaultRowHeight = 16
+      TabOrder = 1
+      TitleFont.Height = -11
+      TitleFont.Name = 'MS Sans Serif'
+    end
+    object FormulaEdit: TEdit[6]
+      Left = 16
+      Height = 21
+      Top = 224
+      Width = 225
+      TabOrder = 3
+    end
+  end
+end

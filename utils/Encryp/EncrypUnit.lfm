@@ -1,0 +1,90 @@
+object EncrypForm: TEncrypForm
+  Left = 151
+  Height = 146
+  Top = 118
+  Width = 367
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Encryption'
+  ClientHeight = 146
+  ClientWidth = 367
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Position = poScreenCenter
+  LCLVersion = '0.9.29'
+  object AlgoritmoLabel: TLabel
+    Left = 16
+    Height = 14
+    Top = 16
+    Width = 47
+    Caption = 'Algoritmo:'
+    FocusControl = AlgoritmoComboBox
+    ParentColor = False
+  end
+  object EntradaLabel: TLabel
+    Left = 16
+    Height = 14
+    Top = 56
+    Width = 41
+    Caption = 'Entrada:'
+    FocusControl = EntradaEdit
+    ParentColor = False
+  end
+  object SaidaLabel: TLabel
+    Left = 16
+    Height = 14
+    Top = 96
+    Width = 33
+    Caption = 'Saída:'
+    FocusControl = SaidaEdit
+    ParentColor = False
+  end
+  object AlgoritmoComboBox: TComboBox
+    Left = 16
+    Height = 21
+    Top = 32
+    Width = 145
+    ItemHeight = 13
+    Items.Strings = (
+      'J1'
+    )
+    Style = csDropDownList
+    TabOrder = 0
+  end
+  object EntradaEdit: TEdit
+    Left = 16
+    Height = 21
+    Top = 72
+    Width = 145
+    EchoMode = emPassword
+    PasswordChar = 'O'
+    TabOrder = 1
+  end
+  object SaidaEdit: TEdit
+    Left = 16
+    Height = 21
+    Top = 112
+    Width = 337
+    Color = clBtnFace
+    ReadOnly = True
+    TabOrder = 2
+  end
+  object CalcularButton: TButton
+    Left = 176
+    Height = 25
+    Top = 72
+    Width = 97
+    Caption = 'Calcular'
+    OnClick = CalcularButtonClick
+    TabOrder = 3
+  end
+  object SairButton: TButton
+    Left = 280
+    Height = 25
+    Top = 72
+    Width = 75
+    Caption = 'Sair'
+    OnClick = SairButtonClick
+    TabOrder = 4
+  end
+end

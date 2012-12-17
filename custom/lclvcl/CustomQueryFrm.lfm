@@ -1,0 +1,96 @@
+object CustomQueryForm: TCustomQueryForm
+  Left = 279
+  Height = 300
+  Top = 101
+  Width = 386
+  Caption = 'CustomQueryForm'
+  ClientHeight = 300
+  ClientWidth = 386
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  LCLVersion = '0.9.29'
+  object DataPanel: TPanel
+    Left = 0
+    Height = 65
+    Top = 0
+    Width = 386
+    Align = alTop
+    BevelOuter = bvNone
+    ClientHeight = 65
+    ClientWidth = 386
+    TabOrder = 0
+    object DataLinePanel: TPanel
+      Left = 0
+      Height = 2
+      Top = 63
+      Width = 386
+      Align = alBottom
+      BevelOuter = bvLowered
+      TabOrder = 0
+    end
+    object QuerySpeedButton: TSpeedButton
+      Left = 303
+      Height = 25
+      Top = 8
+      Width = 75
+      Anchors = [akTop, akRight]
+      Caption = 'Consultar'
+      Color = clBtnFace
+      NumGlyphs = 0
+    end
+  end
+  object BottomPanel: TPanel
+    Left = 0
+    Height = 39
+    Top = 261
+    Width = 386
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 39
+    ClientWidth = 386
+    TabOrder = 2
+    object BottomLinePanel: TPanel
+      Left = 0
+      Height = 2
+      Top = 0
+      Width = 386
+      Align = alTop
+      BevelOuter = bvLowered
+      TabOrder = 0
+    end
+    object FecharButton: TButton
+      Left = 303
+      Height = 25
+      Top = 8
+      Width = 75
+      Anchors = [akTop, akRight]
+      Cancel = True
+      Caption = 'Fechar'
+      TabOrder = 1
+    end
+  end
+  object GridPanel: TPanel
+    Left = 0
+    Height = 196
+    Top = 65
+    Width = 386
+    Align = alClient
+    BevelOuter = bvNone
+    BorderWidth = 8
+    ClientHeight = 196
+    ClientWidth = 386
+    TabOrder = 1
+    object QueryStringGrid: TStringGrid
+      Left = 8
+      Height = 180
+      Top = 8
+      Width = 370
+      Align = alClient
+      DefaultColWidth = 48
+      DefaultRowHeight = 16
+      TabOrder = 0
+      TitleFont.Height = -11
+      TitleFont.Name = 'MS Sans Serif'
+    end
+  end
+end

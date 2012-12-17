@@ -1,0 +1,63 @@
+inherited UserGroupResourceEditForm: TUserGroupResourceEditForm
+  Left = 273
+  Height = 160
+  Top = 211
+  Width = 241
+  Caption = 'UserGroupResourceEditForm'
+  ClientHeight = 160
+  ClientWidth = 241
+  inherited BottomPanel: TPanel
+    Top = 121
+    Width = 241
+    ClientWidth = 241
+    inherited LinePanel: TPanel
+      Width = 241
+    end
+    inherited GravarButton: TButton
+      Left = 79
+    end
+    inherited FecharButton: TButton
+      Left = 159
+    end
+  end
+  inherited ClientPanel: TPanel
+    Height = 121
+    Width = 241
+    ClientHeight = 121
+    ClientWidth = 241
+    object TipoAcessoLabel: TLabel[0]
+      Left = 24
+      Height = 14
+      Top = 16
+      Width = 77
+      Caption = 'Tipo de acesso:'
+      FocusControl = TipoAcessoComboBox
+      ParentColor = False
+    end
+    object ModoAcessoLabel: TLabel[1]
+      Left = 24
+      Height = 14
+      Top = 64
+      Width = 83
+      Caption = 'Modo de acesso:'
+      FocusControl = ModoAcessoComboBox
+      ParentColor = False
+    end
+    object TipoAcessoComboBox: TComboBox[2]
+      Left = 24
+      Height = 21
+      Top = 32
+      Width = 193
+      ItemHeight = 13
+      TabOrder = 0
+    end
+    object ModoAcessoComboBox: TComboBox[3]
+      Left = 24
+      Height = 21
+      Top = 80
+      Width = 193
+      ItemHeight = 13
+      TabOrder = 1
+    end
+  end
+end

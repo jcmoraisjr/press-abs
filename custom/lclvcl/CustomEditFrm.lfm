@@ -1,0 +1,61 @@
+object CustomEditForm: TCustomEditForm
+  Left = 268
+  Height = 284
+  Top = 107
+  Width = 411
+  BorderStyle = bsDialog
+  Caption = 'CustomEditForm'
+  ClientHeight = 284
+  ClientWidth = 411
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  LCLVersion = '0.9.29'
+  object BottomPanel: TPanel
+    Left = 0
+    Height = 39
+    Top = 245
+    Width = 411
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 39
+    ClientWidth = 411
+    TabOrder = 1
+    object LinePanel: TPanel
+      Left = 0
+      Height = 2
+      Top = 0
+      Width = 411
+      Align = alTop
+      BevelOuter = bvLowered
+      TabOrder = 0
+    end
+    object GravarButton: TButton
+      Left = 249
+      Height = 25
+      Top = 8
+      Width = 75
+      Anchors = [akTop, akRight]
+      Caption = '&Gravar'
+      TabOrder = 1
+    end
+    object FecharButton: TButton
+      Left = 329
+      Height = 25
+      Top = 8
+      Width = 75
+      Anchors = [akTop, akRight]
+      Cancel = True
+      Caption = '&Fechar'
+      TabOrder = 2
+    end
+  end
+  object ClientPanel: TPanel
+    Left = 0
+    Height = 245
+    Top = 0
+    Width = 411
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 0
+  end
+end

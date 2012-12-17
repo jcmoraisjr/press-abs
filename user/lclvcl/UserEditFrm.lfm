@@ -1,0 +1,97 @@
+inherited UserEditForm: TUserEditForm
+  Height = 245
+  Width = 258
+  Caption = 'UserEditForm'
+  ClientHeight = 245
+  ClientWidth = 258
+  inherited BottomPanel: TPanel
+    Top = 206
+    Width = 258
+    ClientWidth = 258
+    inherited LinePanel: TPanel
+      Width = 258
+    end
+    inherited GravarButton: TButton
+      Left = 96
+    end
+    inherited FecharButton: TButton
+      Left = 176
+    end
+  end
+  inherited ClientPanel: TPanel
+    Height = 206
+    Width = 258
+    ClientHeight = 206
+    ClientWidth = 258
+    object NomeLabel: TLabel[0]
+      Left = 8
+      Height = 14
+      Top = 8
+      Width = 84
+      Caption = 'Nome do usuário:'
+      FocusControl = NomeEdit
+      ParentColor = False
+    end
+    object LoginLabel: TLabel[1]
+      Left = 168
+      Height = 14
+      Top = 8
+      Width = 68
+      Caption = 'ID para logon:'
+      FocusControl = UserIDEdit
+      ParentColor = False
+    end
+    object AlterarSenhaSpeedButton: TSpeedButton[2]
+      Left = 168
+      Height = 22
+      Top = 176
+      Width = 81
+      Caption = 'Alterar senha'
+      Color = clBtnFace
+      NumGlyphs = 0
+    end
+    object NomeEdit: TEdit[3]
+      Left = 8
+      Height = 21
+      Top = 24
+      Width = 153
+      TabOrder = 0
+    end
+    object UserIDEdit: TEdit[4]
+      Left = 168
+      Height = 21
+      Top = 24
+      Width = 81
+      TabOrder = 1
+    end
+    object GruposGroupBox: TGroupBox[5]
+      Left = 8
+      Height = 113
+      Top = 56
+      Width = 241
+      Caption = 'Grupos:'
+      ClientHeight = 95
+      ClientWidth = 237
+      TabOrder = 2
+      object GruposStringGrid: TStringGrid
+        Left = 16
+        Height = 73
+        Top = 8
+        Width = 209
+        DefaultColWidth = 32
+        DefaultRowHeight = 16
+        TabOrder = 0
+        TitleFont.Height = -11
+        TitleFont.Name = 'MS Sans Serif'
+      end
+    end
+    object ExpirarSenhaCheckBox: TCheckBox[6]
+      Left = 8
+      Height = 19
+      Top = 176
+      Width = 84
+      Caption = 'Expirar senha'
+      TabOrder = 3
+    end
+  end
+end

@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <Package Version="3">
+    <PathDelim Value="\"/>
+    <Name Value="AbstractCoreRT"/>
+    <CompilerOptions>
+      <Version Value="10"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <IncludeFiles Value="..\.."/>
+        <OtherUnitFiles Value="..\..\custom;..\..\custom\lclvcl;..\..\report;..\..\report\lclvcl;..\..\user;..\..\user\lclvcl;..\..\utils;..\..\utils\Encryp"/>
+        <UnitOutputDirectory Value="..\..\bin\laz\core\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <Other>
+        <CompilerMessages>
+          <UseMsgFile Value="True"/>
+        </CompilerMessages>
+        <CompilerPath Value="$(CompPath)"/>
+      </Other>
+    </CompilerOptions>
+    <Version Minor="1"/>
+    <Files Count="24">
+      <Item1>
+        <Filename Value="..\..\abs.inc"/>
+        <Type Value="Include"/>
+      </Item1>
+      <Item2>
+        <Filename Value="..\..\custom\CustomBO.pas"/>
+        <UnitName Value="CustomBO"/>
+      </Item2>
+      <Item3>
+        <Filename Value="..\..\custom\CustomClasses.pas"/>
+        <UnitName Value="CustomClasses"/>
+      </Item3>
+      <Item4>
+        <Filename Value="..\..\custom\CustomConsts.pas"/>
+        <UnitName Value="CustomConsts"/>
+      </Item4>
+      <Item5>
+        <Filename Value="..\..\custom\CustomMVP.pas"/>
+        <UnitName Value="CustomMVP"/>
+      </Item5>
+      <Item6>
+        <Filename Value="..\..\custom\lclvcl\CustomEditFrm.lfm"/>
+        <Type Value="LFM"/>
+      </Item6>
+      <Item7>
+        <Filename Value="..\..\custom\lclvcl\CustomEditFrm.pas"/>
+        <UnitName Value="CustomEditFrm"/>
+      </Item7>
+      <Item8>
+        <Filename Value="..\..\custom\lclvcl\CustomQueryFrm.lfm"/>
+        <Type Value="LFM"/>
+      </Item8>
+      <Item9>
+        <Filename Value="..\..\custom\lclvcl\CustomQueryFrm.pas"/>
+        <UnitName Value="CustomQueryFrm"/>
+      </Item9>
+      <Item10>
+        <Filename Value="..\..\custom\lclvcl\CustomSearchFrm.lfm"/>
+        <Type Value="LFM"/>
+      </Item10>
+      <Item11>
+        <Filename Value="..\..\custom\lclvcl\CustomSearchFrm.pas"/>
+        <UnitName Value="CustomSearchFrm"/>
+      </Item11>
+      <Item12>
+        <Filename Value="..\..\custom\lclvcl\CustomSearchGridFrm.lfm"/>
+        <Type Value="LFM"/>
+      </Item12>
+      <Item13>
+        <Filename Value="..\..\custom\lclvcl\CustomSearchGridFrm.pas"/>
+        <UnitName Value="CustomSearchGridFrm"/>
+      </Item13>
+      <Item14>
+        <Filename Value="..\..\custom\lclvcl\CustomSimpleEditFrm.lfm"/>
+        <Type Value="LFM"/>
+      </Item14>
+      <Item15>
+        <Filename Value="..\..\custom\lclvcl\CustomSimpleEditFrm.pas"/>
+        <UnitName Value="CustomSimpleEditFrm"/>
+      </Item15>
+      <Item16>
+        <Filename Value="..\..\custom\lclvcl\CustomTinyQueryFrm.lfm"/>
+        <Type Value="LFM"/>
+      </Item16>
+      <Item17>
+        <Filename Value="..\..\custom\lclvcl\CustomTinyQueryFrm.pas"/>
+        <UnitName Value="CustomTinyQueryFrm"/>
+      </Item17>
+      <Item18>
+        <Filename Value="..\..\report\lclvcl\ReportGroupEditFrm.lfm"/>
+        <Type Value="LFM"/>
+      </Item18>
+      <Item19>
+        <Filename Value="..\..\report\lclvcl\ReportGroupEditFrm.pas"/>
+        <UnitName Value="ReportGroupEditFrm"/>
+      </Item19>
+      <Item20>
+        <Filename Value="..\..\report\lclvcl\ReportItemEditFrm.lfm"/>
+        <Type Value="LFM"/>
+      </Item20>
+      <Item21>
+        <Filename Value="..\..\report\lclvcl\ReportItemEditFrm.pas"/>
+        <UnitName Value="ReportItemEditFrm"/>
+      </Item21>
+      <Item22>
+        <Filename Value="..\..\report\ReportBO.pas"/>
+        <UnitName Value="ReportBO"/>
+      </Item22>
+      <Item23>
+        <Filename Value="..\..\report\ReportMVP.pas"/>
+        <UnitName Value="ReportMVP"/>
+      </Item23>
+      <Item24>
+        <Filename Value="..\..\utils\ConfigPasswd.pas"/>
+        <UnitName Value="ConfigPasswd"/>
+      </Item24>
+    </Files>
+    <RequiredPkgs Count="3">
+      <Item1>
+        <PackageName Value="PressLazBrokersRT"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="PressLazCoreRT"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="FCL"/>
+        <MinVersion Major="1" Release="1" Valid="True"/>
+      </Item3>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

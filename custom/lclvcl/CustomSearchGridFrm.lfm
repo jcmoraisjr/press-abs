@@ -1,0 +1,105 @@
+object CustomSearchGridForm: TCustomSearchGridForm
+  Left = 303
+  Height = 306
+  Top = 131
+  Width = 305
+  Caption = 'CustomSearchGridForm'
+  ClientHeight = 306
+  ClientWidth = 305
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  LCLVersion = '0.9.29'
+  object DataPanel: TPanel
+    Left = 0
+    Height = 65
+    Top = 0
+    Width = 305
+    Align = alTop
+    BevelOuter = bvNone
+    ClientHeight = 65
+    ClientWidth = 305
+    TabOrder = 0
+    object DataLinePanel: TPanel
+      Left = 0
+      Height = 2
+      Top = 63
+      Width = 305
+      Align = alBottom
+      BevelOuter = bvLowered
+      TabOrder = 0
+    end
+    object QuerySpeedButton: TSpeedButton
+      Left = 240
+      Height = 25
+      Top = 8
+      Width = 57
+      Anchors = [akTop, akRight]
+      Caption = 'Consultar'
+      Color = clBtnFace
+      NumGlyphs = 0
+    end
+  end
+  object GridPanel: TPanel
+    Left = 0
+    Height = 202
+    Top = 65
+    Width = 305
+    Align = alClient
+    BevelOuter = bvNone
+    BorderWidth = 8
+    ClientHeight = 202
+    ClientWidth = 305
+    TabOrder = 1
+    object SearchListBox: TStringGrid
+      Left = 8
+      Height = 186
+      Top = 8
+      Width = 289
+      Align = alClient
+      DefaultColWidth = 32
+      DefaultRowHeight = 16
+      TabOrder = 0
+      TitleFont.Height = -11
+      TitleFont.Name = 'MS Sans Serif'
+    end
+  end
+  object BottomPanel: TPanel
+    Left = 0
+    Height = 39
+    Top = 267
+    Width = 305
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 39
+    ClientWidth = 305
+    TabOrder = 2
+    object BottomLinePanel: TPanel
+      Left = 0
+      Height = 2
+      Top = 0
+      Width = 305
+      Align = alTop
+      BevelOuter = bvLowered
+      TabOrder = 0
+    end
+    object SelectButton: TButton
+      Left = 142
+      Height = 25
+      Top = 8
+      Width = 75
+      Anchors = [akTop, akRight]
+      Caption = 'Selecionar'
+      TabOrder = 1
+    end
+    object FecharButton: TButton
+      Left = 222
+      Height = 25
+      Top = 8
+      Width = 75
+      Anchors = [akTop, akRight]
+      Cancel = True
+      Caption = 'Fechar'
+      TabOrder = 2
+    end
+  end
+end

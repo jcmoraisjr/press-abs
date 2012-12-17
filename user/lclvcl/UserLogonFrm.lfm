@@ -1,0 +1,65 @@
+object UserLogonForm: TUserLogonForm
+  Left = 305
+  Height = 161
+  Top = 150
+  Width = 192
+  BorderStyle = bsDialog
+  Caption = 'UserLogonForm'
+  ClientHeight = 161
+  ClientWidth = 192
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Position = poScreenCenter
+  LCLVersion = '0.9.29'
+  object LogonLabel: TLabel
+    Left = 24
+    Height = 14
+    Top = 16
+    Width = 52
+    Caption = 'ID usuário:'
+    FocusControl = UserIDEdit
+    ParentColor = False
+  end
+  object SenhaLabel: TLabel
+    Left = 24
+    Height = 14
+    Top = 64
+    Width = 35
+    Caption = 'Senha:'
+    FocusControl = SenhaEdit
+    ParentColor = False
+  end
+  object UserIDEdit: TEdit
+    Left = 24
+    Height = 21
+    Top = 32
+    Width = 145
+    TabOrder = 0
+  end
+  object SenhaEdit: TEdit
+    Left = 24
+    Height = 21
+    Top = 80
+    Width = 145
+    EchoMode = emPassword
+    PasswordChar = '*'
+    TabOrder = 1
+  end
+  object OkButton: TButton
+    Left = 32
+    Height = 25
+    Top = 120
+    Width = 65
+    Caption = 'Ok'
+    TabOrder = 2
+  end
+  object CancelButton: TButton
+    Left = 104
+    Height = 25
+    Top = 120
+    Width = 65
+    Cancel = True
+    Caption = 'Cancelar'
+    TabOrder = 3
+  end
+end

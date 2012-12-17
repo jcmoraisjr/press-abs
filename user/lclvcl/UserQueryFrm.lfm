@@ -1,0 +1,49 @@
+inherited UserQueryForm: TUserQueryForm
+  Height = 325
+  Width = 289
+  Caption = 'UserQueryForm'
+  ClientHeight = 325
+  ClientWidth = 289
+  inherited DataPanel: TPanel
+    Height = 57
+    Width = 289
+    ClientHeight = 57
+    ClientWidth = 289
+    inherited DataLinePanel: TPanel
+      Top = 55
+      Width = 289
+    end
+    inherited QuerySpeedButton: TSpeedButton
+      Left = 206
+    end
+    object NomeEdit: TEdit[2]
+      Left = 16
+      Height = 21
+      Top = 16
+      Width = 161
+      TabOrder = 1
+    end
+  end
+  inherited BottomPanel: TPanel
+    Top = 286
+    Width = 289
+    ClientWidth = 289
+    inherited BottomLinePanel: TPanel
+      Width = 289
+    end
+    inherited FecharButton: TButton
+      Left = 206
+    end
+  end
+  inherited GridPanel: TPanel
+    Height = 229
+    Top = 57
+    Width = 289
+    ClientHeight = 229
+    ClientWidth = 289
+    inherited QueryStringGrid: TStringGrid
+      Height = 213
+      Width = 273
+    end
+  end
+end

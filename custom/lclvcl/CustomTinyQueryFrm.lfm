@@ -1,0 +1,75 @@
+object CustomTinyQueryForm: TCustomTinyQueryForm
+  Left = 254
+  Height = 271
+  Top = 99
+  Width = 317
+  Caption = 'CustomTinyQueryForm'
+  ClientHeight = 271
+  ClientWidth = 317
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  LCLVersion = '0.9.29'
+  object GridPanel: TPanel
+    Left = 0
+    Height = 232
+    Top = 0
+    Width = 317
+    Align = alClient
+    BevelOuter = bvNone
+    BorderWidth = 8
+    ClientHeight = 232
+    ClientWidth = 317
+    TabOrder = 0
+    object QueryStringGrid: TStringGrid
+      Left = 8
+      Height = 216
+      Top = 8
+      Width = 301
+      Align = alClient
+      DefaultColWidth = 48
+      DefaultRowHeight = 16
+      TabOrder = 0
+      TitleFont.Height = -11
+      TitleFont.Name = 'MS Sans Serif'
+    end
+  end
+  object BottomPanel: TPanel
+    Left = 0
+    Height = 39
+    Top = 232
+    Width = 317
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 39
+    ClientWidth = 317
+    TabOrder = 1
+    object BottomLinePanel: TPanel
+      Left = 0
+      Height = 2
+      Top = 0
+      Width = 317
+      Align = alTop
+      BevelOuter = bvLowered
+      TabOrder = 0
+    end
+    object AtualizarButton: TButton
+      Left = 154
+      Height = 25
+      Top = 8
+      Width = 75
+      Anchors = [akTop, akRight]
+      Caption = 'Atualizar'
+      TabOrder = 1
+    end
+    object FecharButton: TButton
+      Left = 234
+      Height = 25
+      Top = 8
+      Width = 75
+      Anchors = [akTop, akRight]
+      Cancel = True
+      Caption = 'Fechar'
+      TabOrder = 2
+    end
+  end
+end
